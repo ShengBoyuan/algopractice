@@ -5,7 +5,7 @@ import "strings"
 // MyOwnSolution doesn't handle three situations properly, it just awkwardly handles these
 // possibilities seperately. But I think the "decreasing" idea is quite a shining point of
 // this puzzle, so I keep my own solution, though it's very clumsy.
-func MyOwnSolution(word string) bool {
+func MyOwnSolution520(word string) bool {
 	if word == "" {
 		return true
 	}
@@ -51,7 +51,7 @@ func Negation(word string) bool {
 				usedCapital = true
 			}
 		}
-		if usedNonCapital && usedCapital == true {
+		if usedNonCapital && usedCapital {
 			return false
 		}
 	}
