@@ -6,3 +6,7 @@ Sometimes your enthusiasm for work isn't rewarded. I have to say it's really fru
 
 # 2022-12-20 19:00:09
 Another painful day, most of the time I really wanna be in a quiet environment without disturbance. Honestly speaking, I like coding.
+
+# 2022-12-21 22:42:33
+It seems that LeetCode doesn't have basic sorting problems. Basic sortings are really 
+easy to forget, maybe I need to review them occasionally.
