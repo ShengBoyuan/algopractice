@@ -104,3 +104,44 @@ func BubbleSort(nums []int) []int {
 // 	}
 // 	return nums
 // }
+
+// 10. RadixSort
+// Time Complexity: O(k*n)
+// Space Complexity: O(r*n)
+// Stability: True
+// In Place: False
+// func RadixSort(nums []int, r int) []int {
+// 	// 0. Preprocessing
+// 	n := len(nums)
+// 	if n < 2 {
+// 		return nums
+// 	}
+
+// 	// 1. Get max info and init
+// 	max := nums[0]
+// 	k := 0 // length of the max num
+
+// 	for i := 1; i < n; i++ {
+// 		if max < nums[i] {
+// 			max = nums[i]
+// 		}
+// 	}
+// 	for max != 0 {
+// 		k++
+// 		max /= 10
+// 	}
+// 	buckets := make([][]int, 0, r) // r is radix of the nums
+// 	res := make([]int, 0, n) // temporarily store results
+// 	for i := 0; i < r; i++ {
+// 		buckets[i] = make([]int, 0, n)
+// 	}
+
+// 	// 2. Process loop
+// 	for i := 0; i < r; i++ {
+// 		for j := 0; j < n; j++ {
+
+// 		}
+// 	}
+
+// 	return nil
+// }

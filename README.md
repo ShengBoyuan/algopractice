@@ -10,3 +10,8 @@ Another painful day, most of the time I really wanna be in a quiet environment w
 # 2022-12-21 22:42:33
 It seems that LeetCode doesn't have basic sorting problems. Basic sortings are really 
 easy to forget, maybe I need to review them occasionally.
+
+# 2022-12-23 00:09:07
+When I first learned these sortings as a college student, I got a particular fondness 
+for Radix Sort. I was deeply impressed by its clever approach which I never thought of.
+So I implement this No.10 sorting first, though it's not very popular like Quick Sort.
