@@ -1,5 +1,7 @@
 package sorting
 
+import "math"
+
 // 10 basic sortings
 
 // 1. SelectSort
@@ -110,38 +112,43 @@ func BubbleSort(nums []int) []int {
 // Space Complexity: O(r*n)
 // Stability: True
 // In Place: False
-// func RadixSort(nums []int, r int) []int {
-// 	// 0. Preprocessing
-// 	n := len(nums)
-// 	if n < 2 {
-// 		return nums
-// 	}
+func RadixSort(nums []int, r int) []int {
+	// 0. Preprocessing
+	n := len(nums)
+	if n < 2 {
+		return nums
+	}
 
-// 	// 1. Get max info and init
-// 	max := nums[0]
-// 	k := 0 // length of the max num
+	// 1. Get max info and init
+	max := nums[0]
+	k := 0 // length of the max num
+	for i := 1; i < n; i++ {
+		if max < nums[i] {
+			max = nums[i]
+		}
+	}
+	for max != 0 {
+		k++
+		max /= 10
+	}
 
-// 	for i := 1; i < n; i++ {
-// 		if max < nums[i] {
-// 			max = nums[i]
-// 		}
-// 	}
-// 	for max != 0 {
-// 		k++
-// 		max /= 10
-// 	}
-// 	buckets := make([][]int, 0, r) // r is radix of the nums
-// 	res := make([]int, 0, n) // temporarily store results
-// 	for i := 0; i < r; i++ {
-// 		buckets[i] = make([]int, 0, n)
-// 	}
+	buckets := make([][]int, 10) // r is radix of the nums
+	for i := 0; i < 10; i++ {
+		buckets[i] = make([]int, 0, n)
+	}
 
-// 	// 2. Process loop
-// 	for i := 0; i < r; i++ {
-// 		for j := 0; j < n; j++ {
+	// 2. Process loop
+	for i := 0; i < k; i++ {
+		for j := 0; j < n; j++ {
+			radio := nums[j] / int(math.Pow(10, float64(i))) % 10
+			buckets[radio] = append(buckets[radio], nums[j])
+		}
+		nums = nums[:0] // clear slice
+		for t := 0; t < 10; t++ {
+			nums = append(nums, buckets[t]...)
+			buckets[t] = buckets[t][:0] // clear bucket after remove the nums
+		}
+	}
 
-// 		}
-// 	}
-
-// 	return nil
-// }
+	return nums
+}

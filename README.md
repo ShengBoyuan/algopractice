@@ -15,3 +15,9 @@ easy to forget, maybe I need to review them occasionally.
 When I first learned these sortings as a college student, I got a particular fondness 
 for Radix Sort. I was deeply impressed by its clever approach which I never thought of.
 So I implement this No.10 sorting first, though it's not very popular like Quick Sort.
+
+# 2022-12-23 11:35:30
+I have to say my knowledge foundation of algo is quite weak, many element algos are really difficult for 
+me to implement. Since I graduated from high school, I got much bias against online video classes which I 
+believe is too inefficient. Whatever, maybe it's time to overcome my bias and learn data structures (along 
+with algos) systematically.
