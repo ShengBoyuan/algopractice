@@ -1,23 +1,2 @@
 # algopractice
 boring practice for a new job :(
-
-# 2022-12-20 01:00:00
-Sometimes your enthusiasm for work isn't rewarded. I have to say it's really frustrating. Whatever, we just need to move on. So, I think it's time to pursuit something really fun, and do something with strong aims.
-
-# 2022-12-20 19:00:09
-Another painful day, most of the time I really wanna be in a quiet environment without disturbance. Honestly speaking, I like coding.
-
-# 2022-12-21 22:42:33
-It seems that LeetCode doesn't have basic sorting problems. Basic sortings are really 
-easy to forget, maybe I need to review them occasionally.
-
-# 2022-12-23 00:09:07
-When I first learned these sortings as a college student, I got a particular fondness 
-for Radix Sort. I was deeply impressed by its clever approach which I never thought of.
-So I implement this No.10 sorting first, though it's not very popular like Quick Sort.
-
-# 2022-12-23 11:35:30
-I have to say my knowledge foundation of algo is quite weak, many element algos are really difficult for 
-me to implement. Since I graduated from high school, I got much bias against online video classes which I 
-believe is too inefficient. Whatever, maybe it's time to overcome my bias and learn data structures (along 
-with algos) systematically.
