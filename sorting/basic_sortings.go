@@ -107,6 +107,71 @@ func BubbleSort(nums []int) []int {
 // 	return nums
 // }
 
+// 5. MergeSort
+// Time Complexity: O(nlogn)
+// Space Complexity: O(1)
+// Stability: False
+// In Place: True
+func MergeSort(nums1 []int, nums2 []int, m, n int) []int {
+	i, m, n := len(nums1)-1, m-1, n-1
+
+	for m >= 0 && n >= 0 {
+		if nums1[m] >= nums2[n] {
+			nums1[i] = nums1[m]
+			m--
+		} else {
+			nums1[i] = nums2[n]
+			n--
+		}
+		i--
+	}
+
+	for m >= 0 {
+		nums1[i] = nums1[m]
+		m--
+		i--
+	}
+
+	for n >= 0 {
+		nums1[i] = nums2[n]
+		n--
+		i--
+	}
+
+	return nums1
+}
+
+// 6. QuickSort
+// Time Complexity: O(nlogn)
+// Space Complexity: O(logn)
+// Stability: False
+// In Place: false
+func QuickSort(nums []int, low, high int) {
+	if low < high {
+		pivot := Partition(nums, low, high)
+		QuickSort(nums, low, pivot-1)
+		QuickSort(nums, pivot+1, high)
+	}
+}
+
+func Partition(nums []int, low, high int) int {
+	pivotValue := nums[low]
+
+	for low < high {
+		for low < high && nums[high] >= pivotValue {
+			high--
+		}
+		nums[low] = nums[high]
+		for low < high && nums[low] <= pivotValue {
+			low++
+		}
+		nums[high] = nums[low]
+	}
+
+	nums[low] = pivotValue
+	return low
+}
+
 // 10. RadixSort
 // Time Complexity: O(k*n)
 // Space Complexity: O(r*n)
