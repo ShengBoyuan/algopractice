@@ -10,6 +10,5 @@ func BuyAndSell(prices []int) int {
 			profit = v - low
 		}
 	}
-
 	return profit
 }
